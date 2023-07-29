@@ -1,0 +1,64 @@
+import React, { FC, useState } from "react";
+import { FaBars } from "react-icons/fa";
+import { RiCloseLine } from "react-icons/ri";
+import logo from "../assets/logo.png";
+
+const Navbar: FC = () => {
+  const [toggleNav, setToggleNav] = useState<boolean>(false);
+  const [animation, setAnimation] = useState<boolean>(false);
+
+ const navLinks = ["accueil", "services", "projets", "compétences", "contact"];
+
+  return (
+    <header className="bg-transparent backdrop-blur-md shadow-xl  min-h-[70px] w-full border-b border-white/40  text-white fixed z-[1000] z-[99999]">
+      <nav className="h-full w-full py-2 flex justify-between  items-center px-[80px]">
+        <a href="#accueil" className=" w-auto  flex items-center justify-center ">
+          <img
+            src={logo}
+            onMouseEnter={() =>setAnimation(() => true )}
+            onMouseOut={() =>setAnimation(() => false )}
+            alt="Logo"
+            className="w-[50px] object-cover hover:rotate-90 hover:translate-x-[-20px] scale-90 transition-all duration-500"
+          />
+          <h1 className={`${animation ? 'text-mainGreen':'text-white'} md:text-xl font-bold transition-all duration-500`}>Fiaga F.</h1>
+        </a>
+
+        <ul className="hidden md:flex justify-center font-medium items-center gap-5 capitalize">
+          {navLinks.map((navLink, index) => (
+            <li
+              key={index}
+              className="text-white text-lg hover:text-[#00bd97] transition-all duration-500"
+            >
+              <a href={`#${navLink}`}> {navLink} </a>{" "}
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile Navigation */}
+        <div
+          onClick={() => setToggleNav((nav) => !nav)}
+          className="md:hidden text-white text-2xl cursor-pointer hover:text-[#00bd97] transition-all duration-[400]"
+        >
+          {toggleNav ? <RiCloseLine /> : <FaBars />}
+        </div>
+
+        <ul
+          className={`md:hidden absolute w-full max-w-[450px] left-1/2 bg-[#f1f1f1] flex flex-col py-4 rounded-lg gap-4 items-center justify-center transition-all duration-500 -translate-x-1/2 ${
+            toggleNav ? "top-[100%]" : "top-[-400%]"
+          }`}
+        >
+          {navLinks.map((navLink, index) => (
+            <li
+              key={index}
+              className="text-black capitalize font-semibold text-xl hover:text-[#00bd97] transition-all duration-500"
+            >
+              <a href={`#${navLink}`}> {navLink} </a>{" "}
+            </li>
+          ))}
+        </ul>
+
+      </nav>
+    </header>
+  );
+};
+export default Navbar;
