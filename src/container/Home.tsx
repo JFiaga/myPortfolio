@@ -15,7 +15,7 @@ const Home: FC = () => {
       id="accueil"
       className="h-auto bg-[#21272f] text-white pt-[220px] md:pt-[200px] pb-[50px] px-5 min-h-[100vh] 2xl:min-h-[auto]  gap-[100px] md:gap-5  flex flex-col items-center justify-between md:justify-center lg:px-[30px]  w-[100vw] "
     >
-      <div className="  flex flex-col px-4 items-center  text-lg gap-2 md:px-6  mb-5 max-w-[1440px]">
+      <div className="max-w-[1440px] flex flex-col px-4 items-center  text-lg gap-2 md:px-6  mb-5 ">
         <span>Hi</span>
         <h2 className=" text-mainGreen text-4xl font-bold"> Fiaga Fils</h2>
         <div className="flex">
@@ -55,9 +55,9 @@ const Home: FC = () => {
         </div>
       </div>
 
-      <div>
+      <a href='#experiences' className="text-2xl animate-pulse ">
         <IoIosArrowDown/>
-      </div>
+      </a>
 
     </section>
   );
@@ -65,81 +65,3 @@ const Home: FC = () => {
 export default Home;
 
 
-<>
-
-      {/* <div className="h-[50vh]  px-2 md:w-1/2 relative flex justify-center items-center "> */}
-        {/* Mobile img */}
-        {/* <div className=" md:hidden bg-mainGreen sm:bg-transparent relative  h-[390px] max-w-[400px]  rounded-full   mb-10">
-          <motion.div
-            variants={rotateCircle}
-            initial="initial"
-            animate="rotateValue"
-            className="hidden sm:block h-full w-full shadow-inner border border-mainGreen  shadow-mainGreen absolute z-[200000] rounded-full"
-          ></motion.div>
-          <div className="h-full w-full rounded-full overflow-hidden">
-            <img
-              src={myPicture}
-              className="h-full w-full overflow-hidden  object-cover scale-[1.1] translate-y-[-10px]"
-              alt=""
-            />
-          </div>
-        </div> */}
-
-
-        {/* Desktop img */}
-  
-        {/* <motion.div
-          variants={rotateCircle}
-          initial="initial"
-          animate="rotateValue"
-          whileHover={{ rotate: "0deg" }}
-          transition={{ duration: 1 }}
-          className=" hidden md:block absolute bottom-0 bg-transparent w-[290px] h-[290px]  sm:w-[320px] sm:h-[320px]  md:w-[500px] md:h-[500px] border border-mainGreen rounded-full scale-[0.8] translate-x-[-50%] translate-y-[-50%] shadow-2xl shadow-mainGreen"
-        >
-          <motion.div
-          
-          variants={rotateCircle}
-          initial="initial"
-          animate="spinValue"
-          whileHover={{ rotate: "0deg" }}
-          transition={{ duration: 1 }}
-          className="h-[100%] w-[100%]">
-          <HomeRotateIcon
-            cssClass="top-4 sm:top-0 "
-            icon={reactLogo2}
-            alt="react"
-          />
-          <HomeRotateIcon
-            cssClass="top-0 left-[78%] sm:top-0 sm:left-[88%] "
-            icon={nextjsLogo}
-            imgClass="scale-[1.5]"
-            alt="next"
-          />
-          <HomeRotateIcon
-            cssClass="-left-[12%] bottom-[30%] sm:bottom-[12%] "
-            icon={redux}
-            imgClass="scale-[0.8]"
-            alt="Redux Toolkit"
-          />
-          <HomeRotateIcon
-            cssClass="right-[5%] bottom-[5%] sm:-right-[10%] sm:bottom-[12%]"
-            icon={twcss}
-            alt="Tailwind"
-          />
-          </motion.div>
-          <motion.div className="absolute left bottom-0 bg-transparent w-[98%] h-[98%] border border-mainGreen rounded-full scale-[0.8] z-[100]">
-
-          <div
-          className=" hidden md:block overflow-hidden  w-[100%] h-[100%] absolute rounded-full ">
-          <img
-            src={myPicture}
-            className="h-full w-full overflow-hidden   object-cover scale-[1.2]"
-            alt=""
-          />
-        </div>
-          </motion.div>
-
-      
-        </motion.div> */}
-      {/* </div> */}
-</>
