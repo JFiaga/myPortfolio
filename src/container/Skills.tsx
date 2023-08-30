@@ -14,7 +14,7 @@ import {
   reduxLogo,
   mui5Logo,
   styledcomponentLogo,
-  framerMotionLogo,
+  framerMotionLogo, 
   gatsbyLogo,
   sanityLogo,
   gitLogo,
