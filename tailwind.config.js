@@ -10,7 +10,7 @@ module.exports = {
         opacityColor:'#8892b0'
       },
       fontSize: {
-        clampSm: "clamp(1rem, -0.1429rem + 5.7143vw, 1.5rem);",
+        clampTitle: "clamp(1.5625rem, 1.4375rem + 0.625vw, 2rem);",
         clampLg: "clamp(2.4rem, -0.1429rem + 5.7143vw, 5rem);",
       },
     

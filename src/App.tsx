@@ -9,10 +9,10 @@ return (
 <Navbar />
 {/* <AnimatedCursor/> */}
 <Home />
-<Experiences/>
-<Services/>
 <Projets/>
-<Skills/>
+<Experiences/>
+{/* <Services/> */}
+{/* <Skills/> */}
 <About/>
 <Contact/>
 </> 

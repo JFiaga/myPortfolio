@@ -55,7 +55,6 @@ const Home: FC = () => {
         <IoIosArrowDown />
       </a>
       </div>
-
     </section>
   );
 };

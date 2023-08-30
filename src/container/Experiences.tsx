@@ -1,22 +1,45 @@
-import Zoom from 'react-reveal/Zoom';
-import ExperiencesCard from '../components/ExperiencesCard';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { extArray } from "../utils/expArray";
 
 type Props = {};
 
 const Experiences = (props: Props) => {
   return (
-    <section className="w-[100vw] flex justify-center bg-secondBlack text-white" id="experiences">
-      <div className="max-w-[1400px] w-full flex flex-col items-center justify-center">
-        <Zoom>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white  ">
-            My<span className="text-mainGreen"> Experiences</span>{" "}
-          </h2>
-        </Zoom>
+    <section
+      id="accueil"
+      className="h-auto bg-secondBlack text-black  pb-[50px]     flex flex-col items-center justify-between md:justify-center   w-[100vw] "
+    >
+      <div className="max-w-[1440px] w-full flex flex-col space-y-10   items-start px-16  xl:px-24">
+        <h2 className="text-clampTitle font-bold text-white  capitalize text-center w-full">
+          {" "}
+          Where I’ve <span className="text-mainGreen">Worked</span>
+        </h2>
 
-        <div className=' w-full flex items-center justify-center'>
-        <ExperiencesCard/>
-        </div>
+        <VerticalTimeline>
+          {extArray.map((val: any) => (
+            <VerticalTimelineElement
+              className="lg:text-mainGreen"
+              date="2010 - 2011"
+              iconStyle={{ background: "black", color: "#fff" }}
+              // icon={<WorkIcon />}
+            >
+              <h3 className="text-black">{val.companyName}</h3>
+              <h4 className="text-black">{val.role}</h4>
+              <p className="text-black">{val.desc}
+              </p>
 
+              <div className="flex flex-wrap justify-start mt-4" >
+               {val.technos.map((techno:string) => (
+                 <button className="bg-mainBlack w-fit md:w-[100px] px-2 py-1 rounded-sm text-mainGreen font-medium mr-4">{techno}</button>
+               ))}
+              </div>
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
       </div>
     </section>
   );
