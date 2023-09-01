@@ -17,7 +17,7 @@ const Home: FC = () => {
         <div className="flex flex-col space-y-7  ">
           <span className="text-mainGreen">Hi, my name is</span>
           <div className="flex flex-col items-start">
-            <h2 className="  text-clampLg  font-bold"> Fiaga Fils</h2>
+            <h2 className="  text-clampLg  font-bold"> Jayden Fiaga</h2>
 
             <span className="text-clampLg text-center  font-bold text-opacityColor ">
               I am a Web Artisan

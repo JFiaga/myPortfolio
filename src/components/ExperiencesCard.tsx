@@ -2,77 +2,84 @@ import { useState } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { FaMapPin } from "react-icons/fa";
 
-
 export type ExperienceProps = {
+  onView?:boolean;
   projectName: string;
   details: string;
   technologies: string[];
   codeLink: string;
   demoLink: string;
-  img:string
+  img: string;
 };
 
 const ExperiencesCard = ({
+  onView,
   details,
   projectName,
   technologies,
   codeLink,
   demoLink,
-  img
+  img,
 }: ExperienceProps) => {
   const [viewMore, setViewMore] = useState(false);
   return (
-    <div className="border border-mainGreen/30 p-4 w-full md:w-[90%]  relative ">
-      <div className="flex  flex-col space-y-6  relative   z-[1000] w-full h-full">
-        <h2 className="font-semibold text-lg uppercase text-mainGreen">
-          {projectName}
-        </h2>
 
-        <div>
-          <p className={`  w-[98%] font-semibold text-opacityColor text-base`}>
-            {viewMore ? details?.substring(0, 200) + ". . . " : details}
-          </p>
-          <button
-            onClick={() => setViewMore((val) => !val)}
-            className="text-mainGreen cursor-pointer hover:underline mt-2 inline"
-          >
-            {!viewMore ? "View Less" : "Read More"}
-          </button>
-        </div>
-
-        <div className="flex flex-wrap justify-start items-start font-bold ">
-          {technologies?.map((val: string) => (
-            <div className="flex mx-2 mt-1">
-              <FaMapPin className="text-mainGreen -rotate-45" />
-              <span className="hover:text-mainGreen">{val}</span>
-            </div>
-          ))}
-        </div>
-        <div className="flex space-x-2 items-center ">
-          <a
-            href={codeLink}
-            className=" text-black  font-semibold bg-white min-w-[100px] text-center py-2 rounded hover:bg-black hover:text-white border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1  px-2"
-          >
-            <span>Code</span>
-            <AiFillGithub />
-          </a>
-          <a
-            href={demoLink}
-            className=" text-black h-[40px] hover:text-white font-semibold bg-white min-w-[100px] text-center py-1 rounded hover:bg-mainBlack border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1 sm:text-lg  px-2  "
-          >
-            <span>Demo</span>
-            <AiFillEye />
-          </a>
-        </div>
-      </div>
-      <div className="h-full w-full absolute  left-0 top-0 bg-black  overflow-hidden">
+    <div className="relative :bg-red-600">
+       <div className={`hidden 2xl:block absolute z-[1] w-[37.5rem] h-[18.75rem]  mr-2  bg-mainGreen/30 text-black right-[100%] top-0 ${onView ? 'translate-x-0 ':'translate-x-[50%] h-[25rem]'} transition-all duration-500`}>
         <img
           src={img}
           alt="project illustration"
-          className="w-full h-full object-cover opacity-10"
+          className={`w-full h-full object-cover opacity-10  transition-all duration-300 ${onView && 'opacity-100'}`}
         />
       </div>
+      <div className="z-[1000] my-10 border border-mainGreen/30 bg-black p-4 w-full md:w-[90%] 2xl:max-w-[37.5rem] max-w-[50rem] relative ">
+
+     
+<div className="flex  flex-col space-y-6  z-[1000] w-full h-full relative  ">
+  <h2 className="font-semibold text-lg uppercase text-mainGreen">
+    {projectName}
+  </h2>
+
+  <div>
+    <p className={`  w-[98%] font-semibold text-opacityColor text-base`}>
+      {!viewMore ? details?.substring(0, 200) + ". . . " : details}
+    </p>
+    <button
+      onClick={() => setViewMore((val) => !val)}
+      className="text-mainGreen cursor-pointer hover:underline mt-2 inline"
+    >
+      {viewMore ? "View Less" : "Read More"}
+    </button>
+  </div>
+
+  <div className="flex flex-wrap justify-start items-start font-bold ">
+    {technologies?.map((val: string) => (
+      <div className="flex mx-2 mt-1">
+        <FaMapPin className="text-mainGreen -rotate-45" />
+        <span className="hover:text-mainGreen">{val}</span>
+      </div>
+    ))}
+  </div>
+  <div className="flex space-x-2 items-center ">
+    <a
+      href={codeLink}
+      className=" text-black  font-semibold bg-white min-w-[6.25rem] text-center py-2 rounded hover:bg-black hover:text-white border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1  px-2"
+    >
+      <span>Code</span>
+      <AiFillGithub />
+    </a>
+    <a
+      href={demoLink}
+      className=" text-black h-[2.5rem] hover:text-white font-semibold bg-white min-w-[6.25rem] text-center py-1 rounded hover:bg-mainBlack border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1 sm:text-lg  px-2  "
+    >
+      <span>{onView ? 'demo' :'demoview'}</span>
+      <AiFillEye />
+    </a>
+  </div>
+</div>
+</div>
     </div>
+   
   );
 };
 

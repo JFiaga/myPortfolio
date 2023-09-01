@@ -8,7 +8,7 @@ module.exports = {
         // mainGreen: '#415CF2',
         mainGreen: '#00bd97',
         mainBlack:'#0a192f',
-        secondBlack:'#21272f',
+        secondBlack:'#0a192f',
         opacityColor:'#8892b0'
       },
       fontSize: {

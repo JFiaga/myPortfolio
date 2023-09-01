@@ -7,7 +7,7 @@ const About: FC = () => {
       className="h-auto bg-mainBlack text-white  pb-[50px]     flex flex-col items-center justify-between md:justify-center   w-[100vw] "
     >
       <h2 className="text-clampTitle font-bold text-white  capitalize text-center w-full mb-5">
-            About
+          more  About
             <span className="text-mainGreen"> Me</span>
           </h2>
       <div className="max-w-[1440px] w-full flex flex-col space-y-10   items-start px-16  xl:px-24 lg:flex-row lg:space-y-0 lg:justify-between lg:items-center">

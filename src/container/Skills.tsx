@@ -13,11 +13,11 @@ const Skills: FC = () => {
         <span className="text-mainGreen"> Skills</span>
       </h2>
       <div className="max-w-[1440px] w-full flex  flex-col  lg:flex-row space-y-10 lg:space-y-0   items-start px-16  xl:px-24 justify-center">
-        <div className="flex justify-center space-x-10  w-full">
+        <div className="flex lg:flex-row justify-center lg:space-x-10  w-full flex-col space-y-10 items-center lg:space-y-0 mt-10">
           {hardSkills.map((skills: any) => (
             <div
               key={skills.cardTitle}
-              className="h-[25rem] w-[30%] max-w-[20rem]  rounded-md bg-secondBlack text-white flex flex-col  pt-5"
+              className="h-[25rem] w-[90%] max-w-[20rem]  rounded-md bg-[#21272f] text-white flex flex-col  pt-5"
             >
               <h3 className="text-xl font-bold  text-center ">
                 {skills.cardTitle}
