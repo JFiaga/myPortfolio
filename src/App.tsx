@@ -11,9 +11,9 @@ return (
 <Home />
 <Projets/>
 <Experiences/>
-{/* <Services/> */}
-{/* <Skills/> */}
 <About/>
+<Skills/>
+{/* <Services/> */}
 <Contact/>
 </> 
 )

@@ -39,7 +39,7 @@ const Experiences = (props: Props) => {
               </div>
             </VerticalTimelineElement>
           ))}
-        </VerticalTimeline>
+        </VerticalTimeline> 
       </div>
     </section>
   );
