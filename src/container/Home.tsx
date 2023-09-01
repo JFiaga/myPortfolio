@@ -1,16 +1,14 @@
 import { FC } from "react";
 import {
-  AiOutlineGithub,
-  AiOutlineInstagram,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
-import {  FaBook,  } from "react-icons/fa";
+  BsArrowUpRightCircle
+} from "react-icons/bs";
+
 import { IoIosArrowDown } from "react-icons/io";
 
 const Home: FC = () => {
   return (
     <section
-      id="accueil"
+      id="home"
       className="h-auto bg-secondBlack text-white pt-[220px] md:pt-[200px] pb-[50px]  min-h-[100vh]    flex flex-col items-center justify-between md:justify-center   w-[100vw] "
     >
       <div className="max-w-[1440px] w-full flex flex-col space-y-10   items-start px-16  xl:px-24">
@@ -29,30 +27,20 @@ const Home: FC = () => {
             une codebase propre et scalable. Contactez-moi pour tout besoin
             d’une application web utilisant React, Next ou tout simplement du
             pur HTML/CSS, You can contact me{" "}
-            <a href="#d" className="text-mainGreen">
+            <a href="#contact" className="text-mainGreen">
               Here
             </a>{" "}
             if you need me to your project
           </p>
         </div>
 
-        <div className="flex items-start justify-start space-x-8">
-          <a href="https://github.com/jfiaga" title="see my github">
-            <AiOutlineGithub className="text-black hover:text-mainGreen text-4xl transition-all duration-500 cursor-pointer hover:bg-black bg-white p-1 scale-125 rounded-full" />
-          </a>
-          <a href="https://www.linkedin.com/in/fils-fiaga-5862a5249/" title="see my linkedin">
-            <AiOutlineLinkedin className="text-black hover:text-mainGreen text-4xl transition-all duration-500 cursor-pointer hover:bg-black bg-white p-1 scale-125 rounded-full" />
-          </a>
-          <a href="https://www.instagram.com/fiagafils/" title="see my instagram">
-            <AiOutlineInstagram className="text-black hover:text-mainGreen text-4xl transition-all duration-500 cursor-pointer hover:bg-black bg-white p-1 scale-125 rounded-full" />
-          </a>
-          <a href="https:/littledev.com" title="see my blog">
-            <FaBook className="text-black hover:text-mainGreen text-4xl transition-all duration-500 cursor-pointer hover:bg-black bg-white p-1 scale-125 rounded-full" />
-          </a>
-        </div>
+        <a href="https://littledev.com" className="flex  items-center justify-center space-x-2 border border-mainGreen px-6 py-4 rounded-md hover:bg-mainGreen font-medium text-white transition-all duration-500">
+          <BsArrowUpRightCircle className="text-2xl"/>
+          <span>Visit my blog</span>
+        </a>
 
-      <a href="#experiences" className="text-2xl animate-pulse text-mainGreen self-center pt-5">
-        <IoIosArrowDown />
+      <a href="#projects" className="text-2xl animate-pulse text-mainGreen self-center pt-5">
+        <IoIosArrowDown  />
       </a>
       </div>
     </section>

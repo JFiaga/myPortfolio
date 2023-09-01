@@ -5,7 +5,7 @@ import { hardSkills } from "../utils/skillsArr";
 const Skills: FC = () => {
   return (
     <section
-      id="accueil"
+      id="skills"
       className="h-auto bg-mainBlack text-white  pb-[50px]     flex flex-col items-center justify-between md:justify-center   w-[100vw]  "
     >
       <h2 className="text-clampTitle font-bold text-white  capitalize text-center w-full mb-5">
@@ -17,7 +17,8 @@ const Skills: FC = () => {
           {hardSkills.map((skills: any) => (
             <div
               key={skills.cardTitle}
-              className="h-[25rem] w-[90%] max-w-[20rem]  rounded-md bg-[#21272f] text-white flex flex-col  pt-5"
+              
+              className="h-[25rem] w-[90%] max-w-[20rem]   rounded-md shadow-sm shadow-mainGreen text-white flex flex-col  pt-5"
             >
               <h3 className="text-xl font-bold  text-center ">
                 {skills.cardTitle}
@@ -35,6 +36,7 @@ const Skills: FC = () => {
             </div>
           ))}
         </div>
+     
       </div>
     </section>
   );

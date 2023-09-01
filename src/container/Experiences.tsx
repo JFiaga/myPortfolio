@@ -10,13 +10,13 @@ type Props = {};
 const Experiences = (props: Props) => {
   return (
     <section
-      id="accueil"
+      id="experiences"
       className="h-auto bg-secondBlack text-black  pb-[50px]     flex flex-col items-center justify-between md:justify-center   w-[100vw] "
     >
       <div className="max-w-[1440px] w-full flex flex-col space-y-10   items-start px-16  xl:px-24">
         <h2 className="text-clampTitle font-bold text-white  capitalize text-center w-full">
           {" "}
-          Where I’ve <span className="text-mainGreen">Worked</span>
+          Where I’ve <span className="text-mainGreen"> Worked</span>
         </h2>
 
         <VerticalTimeline>

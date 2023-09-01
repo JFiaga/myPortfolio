@@ -1,40 +1,9 @@
-import React, { useState,useRef, FC } from "react";
-import emailjs from "@emailjs/browser";
+import { FC } from "react";
 import { AiFillTwitterCircle, AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
-import { FaCheckCircle } from "react-icons/fa";
+
 
 const Contact: FC = () => {
 
-  const [message, setMessage] = useState(false)
-
-  if(message){
-    setTimeout(() => {
-      setMessage(()=> false)
-    }, 2500);
-  }
-
-  const form =useRef<any>()
-
-  const sendEmail = () => {
-  
-
-    emailjs
-      .sendForm(
-        'service_ob5g8i4',
-        "template_ijuanrp",
-        form.current,
-        "H-GVFOfl5YIDqAIVt"
-      )
-      .then(
-        (result:any) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error:any) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   return (
     <div
