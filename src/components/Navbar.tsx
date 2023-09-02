@@ -10,7 +10,7 @@ const Navbar: FC = () => {
  const navLinks = ["home", "projects", "experiences", "about","skills", "contact"];
 
   return (
-    <header className="bg-transparent backdrop-blur-md shadow-xl  min-h-[4.375rem] border-b border-white/40  text-white fixed z-[99999]  w-[100vw] flex justify-center">
+    <header className="bg-transparent backdrop-blur-md shadow-xl   min-h-[4.375rem] border-b border-white/40  text-white fixed z-[99999]  w-[100vw] flex justify-center">
       <nav className="h-full w-full py-2 flex justify-between  items-center px-[5rem] max-w-[87.5rem]">
         <a href="#home" className=" w-auto  flex items-center justify-center ">
           <img

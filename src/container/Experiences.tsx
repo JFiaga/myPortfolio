@@ -11,9 +11,9 @@ const Experiences = (props: Props) => {
   return (
     <section
       id="experiences"
-      className="h-auto bg-secondBlack text-black  pb-[50px]     flex flex-col items-center justify-between md:justify-center   w-[100vw] "
+      className="h-auto bg-secondBlack text-black  pb-[3.125rem]     flex flex-col items-center justify-between md:justify-center   w-[100vw] "
     >
-      <div className="max-w-[1440px] w-full flex flex-col space-y-10   items-start px-16  xl:px-24">
+      <div className="max-w-[90rem] w-full flex flex-col space-y-10   items-start px-16  xl:px-24">
         <h2 className="text-clampTitle font-bold text-white  capitalize text-center w-full">
           {" "}
           Where I’ve <span className="text-mainGreen"> Worked</span>
@@ -34,7 +34,7 @@ const Experiences = (props: Props) => {
 
               <div className="flex flex-wrap justify-start mt-4" >
                {val.technos.map((techno:string) => (
-                 <button className="bg-mainBlack w-fit md:w-[100px] px-2 py-1 rounded-sm text-mainGreen font-medium mr-4">{techno}</button>
+                 <button className="bg-mainBlack w-fit md:w-[6.25rem] px-2 py-1 rounded-sm text-mainGreen font-medium mr-4">{techno}</button>
                ))}
               </div>
             </VerticalTimelineElement>
