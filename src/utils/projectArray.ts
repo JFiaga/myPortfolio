@@ -4,7 +4,9 @@ export const projectArr = [
   {
     projectName: "MyBubble",
     details:
-      `For this project, I used Next js, Typescript, MongoDB, React Hook Form, and of course Jest, Cypress and React Testing librairy for the various tests.
+      `
+
+    
 
       MyBubble is by far my most ambitious project, because of all the features I've been able to implement on this site (community creation, the ability to restrict posts, the ability to ban a user from a community, etc.). It took a lot of concentration and patience to build, but the end result was well worth it.
       
@@ -12,27 +14,30 @@ export const projectArr = [
       
       `,
 
-    technologies: ["Next js 13", "Typescript", "React Hook Form", "Cypress", "Jest", "React Testing Library"],
+    technologies: ["Next", "Typescript","MongoDB", "React-Hook-Form", "Cypress", "Jest", "React-Testing-Library", "Tailwind"],
     codeLink: "#",
     demoLink: "#",
     img: hoobank,
     reverse: false,
   },
   {
-    projectName: "Jhire",
+    projectName: "Samaritan AI",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dignissimos autem, suscipit architecto recusandae corrupti modiexcepturi magni tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos iusto ipsam quasi distinctiovoluptatum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperiores natus laudantium praesentium esse quia totamdignissimos aut? tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos tum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperioresconsectetur sapiente excepturi quis quasmolestiae asperiores natus laudantium praesentium esse quia totamdignissimos aut? tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos iusto ipsam quasi distinctiovoluptatum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperiores ",
+    
+    `
+    
+    SamaritanAI is a PaaS that allows you to generate images, videos, sound, code and text according to your needs, with a beautiful and intuitive interface
+
+    Samaritan is the project I most enjoyed working on, as I'm a big fan of artificial intelligence. Its realization was relatively simple, thanks to the experience of my previous projects. However, I learned a few new tricks in its design, notably the Prisma ORM, which I find very efficient and easy to use, and the integration of stripe to give privileges to a user depending on whether he pays or not.`,
 
     technologies: [
-      "React",
+      "Next",
       "Typescript",
-      "Express",
+      "Prisma",
+      "React-Hook-Form",
       "Cypress",
-      "React Testing Librairy",
+      "React-Testing-Librairy",
       "Jest",
-      "Mongo DB",
-      "Node",
-      "Websocket",
       "Tailwind",
     ],
     codeLink: "w",
@@ -41,7 +46,7 @@ export const projectArr = [
     reverse: true,
   },
   {
-    projectName: "ChillHub",
+    projectName: "Jhire",
     details:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dignissimos autem, suscipit architecto recusandae corrupti modiexcepturi magni tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos iusto ipsam quasi distinctiovoluptatum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperiores natus laudantium praesentium esse quia totamdignissimos aut? tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos tum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperioresconsectetur sapiente excepturi quis quasmolestiae asperiores natus laudantium praesentium esse quia totamdignissimos aut? tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos iusto ipsam quasi distinctiovoluptatum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperiores ",
 
@@ -74,3 +79,6 @@ export const projectArr = [
     reverse: true,
   },
 ];
+
+
+// For this project, I used Next js, Typescript, MongoDB, Tailwind, React Hook Form, and of course Jest, Cypress and React Testing librairy for the various tests.
