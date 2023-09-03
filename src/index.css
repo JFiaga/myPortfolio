@@ -47,3 +47,16 @@ html::-webkit-scrollbar-thumb {
 .animate-pulse2 {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+@keyframes loading {
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.animate-loading {
+    animation: loading 1s cubic-bezier(0.4, 0, 0.6, 1) forwards ;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { FaMapPin } from "react-icons/fa";
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 
 export type ProjectProps = {
   onView?:boolean;
@@ -34,7 +35,7 @@ const ProjectCard = ({
         <div className={`absolute h-full w-full  z-[10] ${onView ? '':'backdrop-blur-sm'}`}>
 
         </div>
-        <img
+        <LazyLoadImage
           src={img}
           alt="project illustration"
           className={`w-full h-full object-cover   transition-all duration-300 ${onView ?  'opacity-100':'opacity-70'}`}
