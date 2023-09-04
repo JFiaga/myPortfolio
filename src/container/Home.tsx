@@ -7,9 +7,9 @@ const Home: FC = () => {
   return (
     <section
       id="home"
-      className="h-auto bg-secondBlack text-white pt-[13.75rem] md:pt-[12.5rem] pb-[3.125rem]  xl:min-h-[100vh]    flex flex-col items-center justify-between md:justify-center   w-[100vw] "
+      className="h-auto bg-secondBlack text-white pt-[10.75rem] md:pt-[9.5rem] pb-[3.125rem]  xl:min-h-[100vh]    flex flex-col items-center justify-between md:justify-center   w-[100vw] "
     >
-      <div className="max-w-[90rem] w-full flex flex-col space-y-10  px-2 sm:px-4 lg:px-16 items-start   xl:px-24">
+      <div className="max-w-[90rem] w-full flex flex-col space-y-10  px-4 sm:px-10 lg:px-16 items-start   xl:px-24">
         <div className="flex flex-col space-y-7  ">
           <span className="text-mainGreen">Hi, my name is</span>
           <div className="flex flex-col items-start">
@@ -19,7 +19,7 @@ const Home: FC = () => {
               I am a Web Artisan
             </span>
           </div>
-          <p className="text-opacityColor text-base lg:text-lg max-w-[43.75rem] ">
+          <p className="text-opacityColor text-base lg:text-lg max-w-[43.75rem]  ">
             I'm a <span className="text-mainGreen"> React <span className="text-opacityColor">/</span> Vue</span> frontend developer. I create complex, scalable and
             reliable applications with these frameworks, and the implementation
             of different testing methodologies with tools like{" "}

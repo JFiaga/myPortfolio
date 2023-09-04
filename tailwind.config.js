@@ -13,7 +13,7 @@ module.exports = {
       },
       fontSize: {
         clampTitle: "clamp(1.5625rem, 1.4375rem + 0.625vw, 2rem);",
-        clampLg: "clamp(2.4rem, -0.1429rem + 5.7143vw, 5rem);",
+        clampLg: "clamp(1.8rem, -0.1429rem + 5.7143vw, 5rem);",
       },
       fontFamily:{
         'open':['Open Sans']

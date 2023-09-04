@@ -51,34 +51,24 @@ export const projectArr = [
     `Jhire is a project I created to consolidate my knowledge of the Express.js framework with TypeScript. This project is a site where you can register as a developer or recruiter. Developers can optimize their profile in various ways, while recruiters can chat directly with developers via instant messaging.
 
     With this project, I made a number of discoveries and finally understood why TypeScript is so popular with developers. Indeed, although at first sight it may seem difficult to get to grips with, it nevertheless enables enormous scalability of the code and, among other things, allows far fewer errors to be made than on an application made with JavaScript, which saves an enormous amount of time and resources. Since then, it's been unthinkable for me to code a project without using typescript.`,
-    technologies: ["React", "Typescript","Express","React Query", "Websocket","socket.io", "React Hook Form", "cypress", "React-Testing-Librairy", "Jest", "Tailwind"],
+    technologies: ["React", "Typescript","Express","Mongo DB", "React Query", "Websocket","socket.io", "React Hook Form", "cypress", "React-Testing-Librairy", "Jest", "Tailwind"],
     codeLink: "#",
     demoLink: "#",
     img: hoobank,
     reverse: false,
-  },
-  {
-    projectName: "Jhire",
+  },{
+    projectName: "LittleDev",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dignissimos autem, suscipit architecto recusandae corrupti modiexcepturi magni tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos iusto ipsam quasi distinctiovoluptatum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperiores natus laudantium praesentium esse quia totamdignissimos aut? tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos tum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperioresconsectetur sapiente excepturi quis quasmolestiae asperiores natus laudantium praesentium esse quia totamdignissimos aut? tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos iusto ipsam quasi distinctiovoluptatum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperiores ",
+    `LittleDev is a blog I created to share my ideas and give tips mainly aimed at juniors and anyone wanting to get started in the world of computer development.
 
-    technologies: [
-      "React",
-      "Typescript",
-      "Express",
-      "Cypress",
-      "React Testing Librairy",
-      "Jest",
-      "Mongo DB",
-      "Node",
-      "Websocket",
-      "Tailwind",
-    ],
-    codeLink: "w",
-    demoLink: "d",
+    I've had to train people in a local learning center and I've realized that many people have a lot of preconceived ideas about the world of development before they've even written their first line of code. Many others are totally out of touch, and mistakenly think that you can be a developer in a month, or that algorithms aren't important, etc. On this blog, I try to break down the myths and give real tips to help all those who want to get started to become good developers.`,
+    technologies: ["Next", "Typescript","Express","Mongo DB", "cypress", "React-Testing-Librairy", "Jest", "Tailwind"],
+    codeLink: "#",
+    demoLink: "#",
     img: hoobank,
     reverse: true,
   },
+
 ];
 
 
