@@ -12,7 +12,7 @@ const Skills: FC = () => {
         There are my some of my
         <span className="text-mainGreen"> Skills</span>
       </h2>
-      <div className="max-w-[1440px] w-full flex  flex-col  lg:flex-row space-y-10 lg:space-y-0   items-start px-16  xl:px-24 justify-center">
+      <div className="max-w-[1440px] w-full flex  flex-col  lg:flex-row space-y-10 lg:space-y-0   items-start px-4 sm:px-10 lg:px-16 justify-center">
         <div className="flex lg:flex-row justify-center lg:space-x-10  w-full flex-col space-y-10 items-center lg:space-y-0 mt-10">
           {hardSkills.map((skills: any) => (
             <div
