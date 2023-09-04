@@ -13,10 +13,10 @@ const Experiences = (props: Props) => {
       id="experiences"
       className="h-auto bg-secondBlack text-black  pb-[3.125rem]     flex flex-col items-center justify-between md:justify-center   w-[100vw] "
     >
-      <div className="max-w-[90rem] w-full flex flex-col space-y-10   items-start px-16  xl:px-24">
+      <div className="max-w-[90rem] w-full flex flex-col space-y-10   items-start   xl:px-24 ">
         <h2 className="text-clampTitle font-bold text-white  capitalize text-center w-full">
           {" "}
-          Where I’ve <span className="text-mainGreen"> Worked</span>
+          Where I’ve <span className="text-mainGreen "> Worked</span>
         </h2>
 
         <VerticalTimeline>
@@ -32,9 +32,9 @@ const Experiences = (props: Props) => {
               <p className="text-black">{val.desc}
               </p>
 
-              <div className="flex flex-wrap justify-start mt-4" >
+              <div className="flex flex-col sm:flex-row  items-start space-y-2 sm:space-x-2 sm:space-y-0  flex-wrap justify-start mt-4" >
                {val.technos.map((techno:string) => (
-                 <button className="bg-mainBlack w-fit md:w-[6.25rem] px-2 py-1 rounded-sm text-mainGreen font-medium mr-4">{techno}</button>
+                 <button className="bg-mainBlack w-fit md:w-[6.25rem] px-2 py-1 rounded-sm text-mainGreen font-medium">{techno}</button>
                ))}
               </div>
             </VerticalTimelineElement>

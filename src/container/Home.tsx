@@ -7,9 +7,9 @@ const Home: FC = () => {
   return (
     <section
       id="home"
-      className="h-auto bg-secondBlack text-white pt-[13.75rem] md:pt-[12.5rem] pb-[3.125rem]  min-h-[100vh]    flex flex-col items-center justify-between md:justify-center   w-[100vw] "
+      className="h-auto bg-secondBlack text-white pt-[13.75rem] md:pt-[12.5rem] pb-[3.125rem]  xl:min-h-[100vh]    flex flex-col items-center justify-between md:justify-center   w-[100vw] "
     >
-      <div className="max-w-[90rem] w-full flex flex-col space-y-10   items-start px-16  xl:px-24">
+      <div className="max-w-[90rem] w-full flex flex-col space-y-10  px-2 sm:px-4 lg:px-16 items-start   xl:px-24">
         <div className="flex flex-col space-y-7  ">
           <span className="text-mainGreen">Hi, my name is</span>
           <div className="flex flex-col items-start">
