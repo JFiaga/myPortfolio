@@ -4,10 +4,9 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { extArray } from "../utils/expArray";
+import { BiRightArrow } from "react-icons/bi";
 
-type Props = {};
-
-const Experiences = (props: Props) => {
+const Experiences = () => {
   return (
     <section
       id="experiences"
@@ -23,23 +22,33 @@ const Experiences = (props: Props) => {
           {extArray.map((val: any) => (
             <VerticalTimelineElement
               className="lg:text-mainGreen"
-              date="2010 - 2011"
+              date={val.date}
               iconStyle={{ background: "black", color: "#fff" }}
               // icon={<WorkIcon />}
             >
-              <h3 className="text-black">{val.companyName}</h3>
-              <h4 className="text-black">{val.role}</h4>
-              <p className="text-black">{val.desc}
-              </p>
+              <a href={val.link} className=" font-bold text-mainGreen hover:text-mainBlack transition-all duration-500">{val.companyName}</a>
+              <h4 className="my-2 font-bold capitalize text-mainBlack">
+                {val.role}
+              </h4>
+              <div className="text-black flex flex-col space-y-5">
+                {val.desc.map((value: string) => (
+                  <div className=" flex space-x-2 items-center justify-start relative">
+                    <BiRightArrow className="text-mainGreen  absolute top-0 rotate-45" />
+                    <p>{value}</p>
+                  </div>
+                ))}
+              </div>
 
-              <div className="flex flex-col sm:flex-row  items-start space-y-2 sm:space-x-2 sm:space-y-0  flex-wrap justify-start mt-4" >
-               {val.technos.map((techno:string) => (
-                 <button className="bg-mainBlack w-fit md:w-[6.25rem] px-2 py-1 rounded-sm text-mainGreen font-medium">{techno}</button>
-               ))}
+              <div className="flex flex-col sm:flex-row  items-start space-y-2 sm:space-x-2 sm:space-y-0  flex-wrap justify-start mt-4">
+                {val.technos.map((techno: string) => (
+                  <button className="bg-mainBlack w-fit md:w-[6.25rem] px-2 py-1 rounded-sm text-mainGreen font-medium cursor-text">
+                    {techno}
+                  </button>
+                ))}
               </div>
             </VerticalTimelineElement>
           ))}
-        </VerticalTimeline> 
+        </VerticalTimeline>
       </div>
     </section>
   );

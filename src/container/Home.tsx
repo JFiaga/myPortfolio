@@ -20,9 +20,14 @@ const Home: FC = () => {
             </span>
           </div>
           <p className="text-opacityColor text-base lg:text-lg max-w-[43.75rem]  ">
-            I'm a <span className="text-mainGreen"> React <span className="text-opacityColor">/</span> Vue</span> frontend developer. I create complex, scalable and
-            reliable applications with these frameworks, and the implementation
-            of different testing methodologies with tools like{" "}
+            I'm a{" "}
+            <span className="text-mainGreen">
+              {" "}
+              React <span className="text-opacityColor">/</span> Vue
+            </span>{" "}
+            frontend developer. I create complex, scalable and reliable
+            applications with these frameworks, and the implementation of
+            different testing methodologies with tools like{" "}
             <span className="text-mainGreen">
               cypress, vitest, jest{" "}
               <span className="text-opacityColor">and</span> react testing
