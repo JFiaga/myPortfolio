@@ -48,9 +48,10 @@ export const projectArr = [
   {
     projectName: "Jhire",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Dignissimos autem, suscipit architecto recusandae corrupti modiexcepturi magni tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos iusto ipsam quasi distinctiovoluptatum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperiores natus laudantium praesentium esse quia totamdignissimos aut? tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos tum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperioresconsectetur sapiente excepturi quis quasmolestiae asperiores natus laudantium praesentium esse quia totamdignissimos aut? tempora voluptate illo sapiente facere consequatur.Eveniet impedit amet, quaerat quos iusto ipsam quasi distinctiovoluptatum blanditiis eos, consectetur sapiente excepturi quis quasmolestiae asperiores ",
+    `Jhire is a project I created to consolidate my knowledge of the Express.js framework with TypeScript. This project is a site where you can register as a developer or recruiter. Developers can optimize their profile in various ways, while recruiters can chat directly with developers via instant messaging.
 
-    technologies: ["Next js 13", "Typescript", "React Hook Form"],
+    With this project, I made a number of discoveries and finally understood why TypeScript is so popular with developers. Indeed, although at first sight it may seem difficult to get to grips with, it nevertheless enables enormous scalability of the code and, among other things, allows far fewer errors to be made than on an application made with JavaScript, which saves an enormous amount of time and resources. Since then, it's been unthinkable for me to code a project without using typescript.`,
+    technologies: ["React", "Typescript","Express","React Query", "Websocket","socket.io", "React Hook Form", "cypress", "React-Testing-Librairy", "Jest", "Tailwind"],
     codeLink: "#",
     demoLink: "#",
     img: hoobank,
