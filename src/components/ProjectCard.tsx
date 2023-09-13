@@ -32,7 +32,7 @@ const ProjectCard = ({
       onMouseLeave={() => setOnView((val) => (val = false))}
     >
       <div
-        className={` hidden 2xl:block absolute z-[1] w-[600px] h-[300px]  mr-2  bg-mainGreen/30 text-black  top-0 ${
+        className={` hidden xl:block absolute z-[1] w-[600px] h-[300px]  mr-2  bg-mainGreen/30 text-black  top-0 ${
           onView
             ? ` ${
                 reverse ? "-translate-x-[0%]" : "translate-x-[105%]"
@@ -54,11 +54,11 @@ const ProjectCard = ({
         />
       </div>
       <div
-        className={` rounded-md z-[1000] my-10 border border-mainGreen/30 bg-black p-4 w-full md:w-[90%] 2xl:max-w-[600px] max-w-[800px] relative ${
-          reverse ? "self-center 2xl:self-end" : "2xl:self-start self-center"
+        className={` rounded-md z-[1000] my-10 border border-mainGreen/30 bg-black p-4 w-full md:w-[90%] xl:max-w-[600px] max-w-[800px] relative ${
+          reverse ? "self-center xl:self-end" : "xl:self-start self-center"
         }`}
       >
-        <div className="absolute w-full h-full overflow-hidden top-0  2xl:hidden  ">
+        <div className="absolute w-full h-full overflow-hidden top-0  xl:hidden  ">
           <img
             src={img}
             alt="project illustration"
