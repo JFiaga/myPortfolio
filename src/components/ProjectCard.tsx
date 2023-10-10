@@ -107,7 +107,7 @@ const ProjectCard = ({
             </a>
             <a
               href={demoLink}
-              className=" text-black h-[40px] hover:text-white font-semibold bg-white min-w-[100px] text-center py-1 rounded hover:bg-mainBlack border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1 sm:text-lg  px-2  "
+              className=" text-black  font-semibold bg-white min-w-[100px] text-center py-2 rounded hover:bg-black hover:text-white border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1  px-2"
             >
               <span>Preview</span>
               <AiFillEye />
