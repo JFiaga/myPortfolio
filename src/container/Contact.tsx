@@ -18,16 +18,16 @@ const Contact: FC = () => {
       </a>
       <span className="font-bold md:text-2xl text-white my-5">Or</span>
       <div className="flex items-start justify-start space-x-8">
-          <a href="https://github.com/jfiaga" title="see my github">
+          <a href="https://github.com/jfiaga" >
             <AiOutlineGithub className="text-black hover:text-mainGreen text-4xl transition-all duration-500 cursor-pointer hover:bg-black bg-white p-1 scale-125 rounded-full" />
           </a>
-          <a href="https://www.linkedin.com/in/fils-fiaga-5862a5249/" title="see my linkedin">
+          <a href="https://www.linkedin.com/in/fils-jayden-fiaga-7408a9295/" >
             <AiOutlineLinkedin className="text-black hover:text-mainGreen text-4xl transition-all duration-500 cursor-pointer hover:bg-black bg-white p-1 scale-125 rounded-full" />
           </a>
-          <a href="https://www.instagram.com/fiagafils/" title="see my instagram">
+          <a href="https://www.instagram.com/xjaydenfx/" >
             <AiOutlineInstagram className="text-black hover:text-mainGreen text-4xl transition-all duration-500 cursor-pointer hover:bg-black bg-white p-1 scale-125 rounded-full" />
           </a>  
-          <a href="https://twitter.com/xJaydenFx?t=cPdBy-2xqDv6_LPEciDEWw&s=09" title="see my instagram">
+          <a href="https://twitter.com/xJaydenFx" >
             <AiFillTwitterCircle className="text-black hover:text-mainGreen text-4xl transition-all duration-500 cursor-pointer hover:bg-black bg-white p-1 scale-125 rounded-full" />
           </a>
       
