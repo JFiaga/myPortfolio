@@ -18,7 +18,7 @@ const Skills: FC = () => {
             <div
               key={skills.cardTitle}
               
-              className="h-[25rem] w-[90%] max-w-[20rem]   rounded-md shadow-sm shadow-mainGreen text-white flex flex-col  pt-5"
+              className="h-[26rem] w-[90%] max-w-[20rem]   rounded-md shadow-sm shadow-mainGreen text-white flex flex-col  pt-5"
             >
               <h3 className="text-xl font-bold  text-center ">
                 {skills.cardTitle}

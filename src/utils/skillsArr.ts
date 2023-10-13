@@ -39,8 +39,8 @@ export const hardSkills = [
           "MySQL",
           "MongoDB",
           "GraphQL",
-          "Storybook",
           "Figma",
+          "Wordpress"
 
         ],
       },

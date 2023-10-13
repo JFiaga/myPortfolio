@@ -12,6 +12,7 @@ export type ProjectProps = {
   demoLink: string;
   img: string;
   reverse: boolean;
+
 };
 
 const ProjectCard = ({
@@ -100,14 +101,14 @@ const ProjectCard = ({
           <div className="flex space-x-2 items-center ">
             <a
               href={codeLink}
-              className=" text-black  font-semibold bg-white min-w-[100px] text-center py-2 rounded hover:bg-black hover:text-white border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1  px-2"
+              className=" text-black  font-semibold bg-white min-w-[130px] text-center py-2 rounded hover:bg-black hover:text-white border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1  px-2"
             >
               <span>Code</span>
               <AiFillGithub />
             </a>
             <a
               href={demoLink}
-              className=" text-black  font-semibold bg-white min-w-[100px] text-center py-2 rounded hover:bg-black hover:text-white border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1  px-2"
+              className=" text-black  font-semibold bg-white min-w-[130px] text-center py-2 rounded hover:bg-black hover:text-white border border-transparent hover:border-white cursor-pointer transition-all duration-500 flex items-center justify-center space-x-1  px-2"
             >
               <span>Preview</span>
               <AiFillEye />

@@ -1,9 +1,9 @@
-import React, { FC, useState } from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { RiCloseLine } from "react-icons/ri";
 import logo from "../assets/logo.png";
 
-const Navbar: FC = () => {
+const Navbar = () => {
   const [toggleNav, setToggleNav] = useState<boolean>(false);
   const [animation, setAnimation] = useState<boolean>(false);
 

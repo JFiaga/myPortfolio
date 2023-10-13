@@ -37,7 +37,7 @@ const About: FC = () => {
 
           <a
             href="##"
-            className="self-start mt-10 border px-4 py-2 border-mainGreen hover:bg-mainGreen font-semibold transition-all duration-500"
+            className="self-start mt-10 border px-4 py-2 rounded-sm border-mainGreen hover:bg-mainGreen font-semibold transition-all duration-500"
           >
             Download My Resume
           </a>
