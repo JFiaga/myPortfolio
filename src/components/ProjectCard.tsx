@@ -46,7 +46,7 @@ const ProjectCard = ({
             onView ? "" : "backdrop-blur-sm"
           }`}
         ></div>
-        <LazyLoadImage
+        <img
           src={img}
           alt="project illustration"
           className={`w-full h-full object-cover   transition-all duration-300 ${

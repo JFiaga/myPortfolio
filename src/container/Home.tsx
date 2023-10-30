@@ -40,14 +40,14 @@ const Home: FC = () => {
             if you need me to your project
           </p>
         </div>
-
+{/* 
         <a
           href="https://littledev.com"
           className="flex  items-center justify-center space-x-2 border border-mainGreen px-6 py-4 rounded-md hover:bg-mainGreen font-medium text-white transition-all duration-500"
         >
           <BsArrowUpRightCircle className="text-2xl" />
           <span>Visit my blog</span>
-        </a>
+        </a> */}
 
         <a
           href="#projects"

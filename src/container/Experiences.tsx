@@ -3,7 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { extArray } from "../utils/expArray";
+import { expArray } from "../utils/expArray";
 import { BiRightArrow } from "react-icons/bi";
 
 const Experiences = () => {
@@ -19,7 +19,7 @@ const Experiences = () => {
         </h2>
 
         <VerticalTimeline>
-          {extArray.map((val: any) => (
+          {expArray.map((val: any) => (
             <VerticalTimelineElement
               className="lg:text-mainGreen"
               date={val.date}
@@ -39,9 +39,9 @@ const Experiences = () => {
                 ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row  items-start space-y-2 sm:space-x-2 sm:space-y-0  flex-wrap justify-start mt-4">
+              <div className="flex flex-col sm:flex-row  items-start  sm:space-y-0  flex-wrap  mt-4 space-y-4 gap-2">
                 {val.technos.map((techno: string) => (
-                  <button className="bg-mainBlack w-fit md:w-[6.25rem] px-2 py-1 rounded-sm text-mainGreen font-medium cursor-text">
+                  <button className="bg-mainBlack min-w-fit md:w-[6.25rem] px-2 py-1 mx-2  rounded-sm text-mainGreen font-medium cursor-text">
                     {techno}
                   </button>
                 ))}
