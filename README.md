@@ -2,7 +2,7 @@
 
 ### [Live Site](https://jaydenfiaga.tech)
 
-![Portfolio Website](https://pasteboard.co/Ln8kY1nfZmee.png)
+![Portfolio Website](![img3](https://github.com/JFiaga/myPortfolio/assets/119431457/eed8ad95-a581-438c-ba3a-d5621580ecfb))
 
 
 ### [🌟 Welcome to my portfolio! )
